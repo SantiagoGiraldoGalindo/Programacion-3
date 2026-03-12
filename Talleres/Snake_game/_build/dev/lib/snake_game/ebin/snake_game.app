@@ -1,0 +1,1 @@
+{application,snake_game,[{modules,['Elixir.Snake.Game','Elixir.Snake.Player','Elixir.Snake.Terminal']},{optional_applications,[]},{applications,[kernel,stdlib,elixir,logger]},{description,"snake_game"},{registered,[]},{vsn,"0.1.0"}]}.
