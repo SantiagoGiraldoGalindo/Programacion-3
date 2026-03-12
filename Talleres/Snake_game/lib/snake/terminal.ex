@@ -2,7 +2,7 @@ defmodule Snake.Terminal do
   @moduledoc "Interfaz de terminal para el juego"
 
   def start do
-    IO.write("\e[H\e[2J")
+    IO.write("\e[H\e[2J") #limpiar terminal en pantalla
     IO.puts("╔════════════════════════════════════════╗")
     IO.puts("║        🐍 SNAKE GAME EN ELIXIR 🐍      ║")
     IO.puts("╚════════════════════════════════════════╝\n")
@@ -52,7 +52,7 @@ defmodule Snake.Terminal do
       IO.puts("No hay jugadores registrados aún")
     else
       players
-      |> Enum.with_index(1)
+      |> Enum.with_index(1) #agrega a cada jugador un numero (indexa)
       |> Enum.each(fn {{name, score}, idx} ->
         IO.puts("#{idx}. #{name}: #{score} puntos")
       end)
