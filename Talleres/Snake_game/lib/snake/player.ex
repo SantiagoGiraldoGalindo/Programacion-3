@@ -8,7 +8,7 @@ defmodule Snake.Player do
       File.read!(file_path) |> :erlang.binary_to_term()
     else
       %{}
-    end
+          end
   end
 
   def create(name) do
